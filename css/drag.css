@@ -1,0 +1,284 @@
+.title{
+	width: 1920px;
+	height: 60px;
+	background-color: #f4f4f4;
+}
+.title>ul{
+	padding-left: 75px;
+	line-height: 60px;
+}
+.title li{
+	float: left;
+	font-size: 20px;
+	letter-spacing: 5px;
+	padding-right: 64px;
+}
+.title a{
+	color: #383838;
+}
+.nav{
+	width: 1918px;
+	height: 121px;
+	border-top: 1px solid #dcdcdc;
+	border-left: 1px solid #dcdcdc;
+	border-right: 1px solid #dcdcdc;
+	background-color: #f4f4f4;
+}
+.operateLeft,.operateRight{
+	display: inline-block;
+	padding-left: 75px;
+	padding-top: 24px;
+	position: relative;
+}
+.operateRight{
+	float: right;
+	margin-right: 117px;
+	z-index: 100;
+}
+.operateLeft>li,.operateRight>li{
+	float: left;
+	margin-right: 70px;
+	
+}
+.operateRight>li{
+	margin-right: 120px;
+	
+}
+.operateLeft img,.operateRight img{
+	width: 40px;
+	height: 40px;
+	padding-bottom: 8px;
+}
+.noneImg{
+	display: none;
+}
+.operateLeft p,.operateRight p{
+	font-size: 20px;
+	letter-spacing: 5px;
+	color: #383838;
+	position: absolute;
+	margin-left: -3px;
+}
+.operateRight p{
+	margin-left: -25px;
+}
+.clear{
+	clear: both;
+}
+.operateText{
+	display: inline-block;
+	width: 353px;
+	height: 121px;
+	border-left: 1px solid #dcdcdc;
+	border-right: 1px solid #dcdcdc;
+	position: absolute;
+}
+.operateText>li{
+	float: left;
+	/*margin-top: 35px;*/
+	margin-left: 30px;
+	line-height: 121px;
+	/*position:absolute;*/
+}
+.wz,.moreWz{
+	width: 100px;
+	height: 50px;
+	border: 1px solid #dcdcdc;
+	box-shadow: 0px 0px 9px #DCDCDC;
+	background-color: #fff;
+	font-size: 20px;
+	letter-spacing: 5px;
+	text-align: center;
+	z-index: 100;
+}
+.moreWz{
+	width: 163px;
+	/*left: 160px;*/
+}
+/*拖拉页面内容*/
+.cont{
+	width: 1920px;
+	background-color: #F4F4F4;
+}
+.contNav{
+	display: inline-block;
+	width: 479px;
+	border-top: 1px solid #DCDCDC;
+	padding-top: 38px;
+}
+.contNav>ul{
+	width: 444px;
+	height: 254px;
+	padding-top: 22px;
+	padding-left: 35px;
+	margin-bottom: 3px;
+}
+.contNav_ulBlue{
+	background-color: #e4ecf5;
+}
+.contNav>ul>li{
+	float: left;
+	margin-right: 13px;
+	
+}
+.order{
+	color: #383838;
+	font-size: 20px;
+	letter-spacing: 4px;
+	padding-right: 4px;
+}
+.whiteBook{
+	width: 171px;
+	height: 234px;
+	background-color: #fff;
+}
+.contDrag{
+	float: right;
+	display: inline-block;
+	width: 1440px;
+	background: url(../img/bg.png) repeat;
+	position: relative;
+}
+.contDrag1,.contDrag2,.contDrag3{
+	margin: 83px 0 68px 221px ;
+	width: 1220px;
+	height: 638px;
+	display: none;
+}
+.contDrag1{
+	display: block;
+}
+.dragCont{
+	display: inline-block;
+	margin-right: 62px;
+	width: 446px;
+	height: 638px;
+	background-color: #fff;
+	border-radius: 3px;
+}
+.up{
+	width: 1379px;
+	height: 54px;
+	background-color: #fff;
+	margin-left: 29px;
+}
+.up img{
+	width: 22px;
+	height: 20px;
+	float: right;
+	margin-top: 10px;
+	margin-right: 12px;
+}
+.downNull,.down{
+	clear: both;
+	width: 1379px;
+	height: 299px;
+	background-color: #FFFFFF;
+	margin-left: 29px;
+	margin-top: -300px;
+	float: left;
+	box-shadow: 0 0 29px #ACACAC;
+	display: none;
+}
+.down{
+	width: 1379px;
+	height: 299px;
+	padding: 0px 0 0px 0px;
+}
+.downNull>p{
+	width: 1379px;
+	line-height: 299px;
+	text-align: center;
+	font-size: 20px;
+	color: #c6c6c6;
+	letter-spacing: 4px;
+	position: absolute;
+}
+.downNull>img,.down>img{
+	width: 22px;
+	height: 20px;
+	float: right;
+	margin-top: 10px;
+	margin-right: 12px;
+}
+.down>p{
+	display: inline-block;
+	font-size: 20px;
+	color: #c6c6c6;
+	margin-top: 70px;
+}
+.name{
+	margin: 0 37px 0 91px;
+}
+
+.down>ul{
+	margin-left: 91px;
+	margin-top: 50px;
+}
+.down>ul>li{
+	float: left;
+	margin-right: 60px;
+}
+.option{
+	font-size: 20px;
+	color: #383838;
+	margin-right: 37px;
+}
+/*按钮*/
+.circleBig{
+	width: 21px;
+	height: 21px;
+	border-radius: 50%;
+	background-color: #c6c6c6;
+	position: relative;
+	padding: 1px;
+	display: inline-block;
+	top: 4px;
+}
+.circleSmall{
+	width: 21px;
+	height: 21px;
+	border-radius: 50%;
+	background-color: #fff;
+	position: absolute;
+}
+/*蓝色圆环*/
+.circleBig_blue{
+	width: 9px;
+	height: 9px;
+	border-radius: 50%;
+	background-color: #3F97FF;
+	position: relative;
+	padding: 7px;
+	display: inline-block;
+	top: 4px;
+}
+.circleSmall_blue{
+	width: 9px;
+	height: 9px;
+	border-radius: 50%;
+	background-color: #fff;
+	position: absolute;
+}
+.number{
+	display: inline-block;
+	font-size: 20px;
+	color: #383838;
+	margin-left: 15px;
+	letter-spacing: 4px;
+}
+.assigned{
+	font-size: 20px;
+	padding: 5px;
+}
+.ahref{
+	width: 21px;
+	height: 21px;
+	border-radius: 50%;
+	border-color: #fff;
+	border: 1px solid #C6C6C6;
+}
+
+
+
+

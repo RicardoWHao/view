@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>拖拉页</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/drag.css"/>
+		<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/easyUI.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/drag.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/dragPlug.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="title">
+			<ul>
+				<li><a href="#">文件</a></li>
+				<li><a href="#">编辑</a></li>
+				<li><a href="#">帮助</a></li>
+			</ul>
+		</div>
+		<div class="nav">
+			<ul class="operateLeft">
+				<li>
+					<a href="#">
+						<img src="img/011.png" class="blockImg"/>
+						<img src="img/012.png" class="noneImg"/>
+						<p>保存</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/021.png" class="blockImg"/>
+						<img src="img/022.png" class="noneImg"/>
+						<p>后退</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/031.png" class="blockImg"/>
+						<img src="img/032.png" class="noneImg"/>
+						<p>前进</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/041.png" class="blockImg"/>
+						<img src="img/042.png" class="noneImg"/>
+						<p>剪切</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/051.png"/ class="blockImg">
+						<img src="img/052.png" class="noneImg"/>
+						<p>复制</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/061.png" class="blockImg"/>
+						<img src="img/062.png" class="noneImg"/>
+						<p>粘贴</p>
+					</a>
+				</li>
+			</ul>
+			<ul class="operateText">
+				<li><input type="button" value="文字" class="wz" /></li>
+				<li><input type="button" value="多行文字" class="moreWz" /></li>
+			</ul>
+			<ul class="operateRight">
+				<li>
+					<a href="#">
+						<img src="img/071.png" class="ahref1"/>
+						<p>单项选择</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/081.png" class="ahref2"/>
+						<p>多项选择</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/091.png" class="ahref3"/>
+						<p>阅读理解</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/101.png" class="ahref4"/>
+						<p>完形填空</p>
+					</a>
+				</li>
+			</ul>
+			
+		</div>
+		<div class="cont">
+			<div class="contNav">
+				<ul class="contNav1" onclick="javascript:ulClick(this);" style="background-color: #e4ecf5;">
+					<li><p class="order">01</p></li>
+					<li>
+						<div class="whiteBook" id="book1"></div>
+					</li>
+					<li>
+						<div class="whiteBook" id="book1"></div>
+					</li>
+				</ul>
+				<ul onclick="javascript:ulClick(this);">
+					<li><p class="order">02</p></li>
+					<li>
+						<div class="whiteBook" id="book1"></div>
+					</li>
+					<li>
+						<div class="whiteBook" id="book1"></div>
+					</li>
+				</ul>
+				<ul onclick="javascript:ulClick(this);">
+					<li><p class="order">03</p></li>
+					<li>
+						<div class="whiteBook" id="book1"></div>
+					</li>
+					<li>
+						<div class="whiteBook" id="book1"></div>
+					</li>
+				</ul>
+			</div>
+			<div class="contDrag">
+				<div class="contDrag1">
+					<div class="dragCont">1</div>
+					<div class="dragCont">1</div>
+				</div>
+				<div class="contDrag2">
+					<div class="dragCont">2</div>
+					<div class="dragCont">2</div>
+				</div>
+				<div class="contDrag3">
+					<div class="dragCont">3</div>
+					<div class="dragCont">3</div>
+				</div>
+				<div class="up" id="up">
+					<img src="img/向上滑出.png"/>
+				</div>
+				<div class="downNull" id="downNull">
+					<img src="img/向下收回.png" />
+					<p>选中组件并编辑修改组件属性</p>
+				</div>
+				<div class="down">
+					<img src="img/向下收回.png"/>
+					<p class="name">组件名称</p>
+					<p>单项选择</p>
+					<ul>
+						<li class="option">选项数量</li>
+						<li>
+							<div class="circleBig_blue">
+								<div class="circleSmall_blue"></div>
+							</div>
+							<p class="number">2个</p>
+						</li>
+						<li>
+							<div class="circleBig">
+								<div class="circleSmall"></div>
+							</div>
+							<p class="number">3个</p>
+						</li>
+						<li>
+							<div class="circleBig">
+								<div class="circleSmall"></div>
+							</div>
+							<p class="number">4个</p>
+						</li>
+					</ul>
+				</div>
+			</div>	
+		</div>
+	</body>
+</html>

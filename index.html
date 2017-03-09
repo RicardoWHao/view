@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>主页1</title>
+		<meta name="author" content="Songyajie" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/book.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="title"></div>
+		<div class="cont">
+			<ul class="nav">
+				<li class="myNote">
+					<ul class="sel" id="sel">
+						<li>
+							<p class="text">我的复习笔记</p>
+						</li>
+						<li class="select"></li>
+					</ul>
+					<ul class="select_cont" id="select_cont">
+						<li class="cont_inClass"><a href="">我的随堂笔记</a></li>
+						<li class="cont_review"><a href="">我的复习笔记</a></li>
+					</ul>
+				</li>
+				<li class="english">英语</li>
+				<li>
+					<a href="#">
+						<ul class="add">
+							<li class="symbol">+</li>
+							<li class="note">添加笔记</li>
+						</ul>
+
+					</a>
+				</li>
+			</ul>
+			<div class="book">
+				<div class="class">初一</div>
+				<ul class="textbook1">
+					<!--<li>-->
+						<!--<img src="img/01.png" class="imgBook" />-->
+						<!--<div class="englishNote">
+							<ul class="noteCover">
+								<li class="noteCover_title">英语 笔记1</li>
+								<li class="noteCover_edit"><a href="drag.html">编辑笔记</a></li>
+								<li class="noteCover_operate">
+									<ul class="operate_tips">
+										<li>
+											<img src="img/indexEdit1.png" id="edit"/>
+										</li>
+										<li class="del">
+											<a id="del"><img src="img/indexdel1.png" /></a>
+										</li>
+										<li>
+											<a id="copy"><img src="img/indexCopy1.png" /></a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>-->
+					<!--</li>-->
+				</ul>
+				<div class="class">初二</div>
+				<ul class="textbook2">
+					<!--<li>
+						<img src="img/01.png" class="imgBook" />
+					</li>-->
+				</ul>
+				<!--灰色蒙版-->
+				<div class="mengban" id="mengban"></div>
+				<!--修改弹出框-->
+				<div class="editDiv" id="editDiv">
+					<p class="editDiv_title">修改</p>
+					<div class="className">
+						<span>名称</span>
+						<input type="text" />
+					</div>
+					<div class="className">
+						<span class="course">科目</span>
+						<select class="courSel">
+								<option value="" id="option">英语</option>
+								<option value="">英语2</option>
+								<option value="">英语3</option>
+								<option value="">英语3</option>
+								<option value="">英语3</option>
+							</select>
+					</div>
+					<div class="className ">
+						<span>年级</span>
+						<div class="classUl">
+							<label class="radio">初一<input type="radio" name="radio" value="1" checked><i></i></label>
+							<label class="radio">初二<input type="radio" name="radio" value="2" ><i></i></label>
+							<label class="radio">初三<input type="radio" name="radio" value="3" ><i></i></label>
+							<label class="radio">高一<input type="radio" name="radio" value="4" ><i></i></label>
+							<label class="radio">高二<input type="radio" name="radio" value="5" ><i></i></label>
+							<label class="radio">高三<input type="radio" name="radio" value="6" ><i></i></label>
+						</div>
+					</div>
+					<ul class="cutLine">
+						<li class="hrLeft"></li>
+						<li class="hrText">页面设置</li>
+						<li class="hrRight"></li>
+					</ul>
+					<div class="bookMessage">
+						<div id = "pic" class="pic">
+							<!--<img src="img/01.png" />-->
+						</div>
+						<ul>
+							<li class="bookTitle">笔记封面</li>
+							<li class="bookSize">尺寸：
+								<span>000*000</span>
+							</li>
+							<li class="change"><a>更改封面</a></li>
+						</ul>
+					</div>
+					<div class="input">
+						<input type="button" class="off" value="取消" id="offEdit" />
+						<input type="button" class="sure" value="确认修改" id="sureEdit" />
+					</div>
+				</div>
+				<!--删除弹出框-->
+				<div class="delDiv" id="delDiv">
+					<p class="editDiv_title">删除</p>
+					<p class="delSure">删除当前笔记</p>
+					<div class="input delInput">
+						<input type="button" class="off" value="取消" id="offDel" />
+						<input type="button" class="sure" value="确定" id="sureDel" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
